@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+    <header>
+        <div class="control">    
+            <select id="fontSlector">
+                <option value="serif">Serif</option>
+                <option value="Sans-serif">Sans-serif</option>
+                <option value="Monospace">Monospace</option>
+            </select>
+            <label class="switch">
+                <input type="checkbox" id="themeToggle"/>
+                <span class="slider"></span>
+            </label> 
+            <span>🌙</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="search a word..."class="search-bar"/>
+            <button id="searchBtn">
+                  <img src="https://img.icons8.com/ios-filled/24/000000/search--v1.png" alt="Search" />
+            </button>
+        </div>
+    </header>
+    <main id="result"></main>
+    <script src="script.js"></script>
+</body>
+</html>

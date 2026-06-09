@@ -1,0 +1,81 @@
+body {
+    font-family: serif;
+    margin: 0;
+    padding: 2rem;
+    transition: background 0.3s, color 0.3s;
+}
+body.dark{
+    background-color: #121212;
+    color: #fff;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 87%;
+}
+.search-bar{
+    display: flex;
+    gap:rem;
+    
+}
+
+input,select,button{
+    padding: 0.2rem;
+}
+
+button{
+    cursor: pointer;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin-left:15%;
+}
+.switch input{
+    display: none;
+}
+.slider{
+    position: absolute;
+    top:0; left:0;
+    right:0; bottom:0;
+    background-color: #ccc;
+    border-radius: 25px;
+    transition: .4s;
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 18px;width: 18px;
+    left: 4px; bottom: 3.2px;
+    background-color: white;
+    transition: .4;
+    border-radius: 50%;
+}
+
+input:checked+.slider{
+    background-color: #2196f3;
+}
+input:checked+.slider::before{
+    transform:translateX(26px);
+}
+.pronounce{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+audio{
+    outline: none;
+}
+
+
+
+
+
