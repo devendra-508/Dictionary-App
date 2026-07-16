@@ -5,8 +5,8 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 body.dark{
-    background-color: #121212;
-    color: #fff;
+    background-color: #55a3cd;
+    
 }
 header, main{
     max-width: 700px;
@@ -25,20 +25,14 @@ header{
     flex-wrap: wrap;
     gap: 0.5rem;
 }
-.search-bar{
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+#fontSelector{
+    border: 1px solid #ccc;
+    border-radius: 8px;
     
 }
-.search-bar input {
-    flex: 1;
-    min-width: 0;
-}
-
 input,select,button{
-    padding: 0.5rem;
-    font-size: 1rem;
+    padding: 0.4em;
+    font-size: 0.9rem;
 }
 
 button{
@@ -68,12 +62,12 @@ button{
     height: 18px;width: 18px;
     left: 4px; bottom: 3.2px;
     background-color: white;
-    transition: .4;
+    transition: .4s;
     border-radius: 50%;
 }
 
 input:checked+.slider{
-    background-color: #2196f3;
+    background-color: rgb(77, 93, 77);
 }
 input:checked+.slider::before{
     transform:translateX(26px);
@@ -89,7 +83,47 @@ audio{
 }
 
 
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.3rem 0.5rem;
+    max-width: 400px;
+}
 
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    background: transparent;
+    font-size: 1rem;
+}
+.search-bar input:focus {
+    background: transparent;
+    outline: none;
+}
+
+.search-bar button {
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.3rem;
+}
+
+.search-bar button:active {
+    transform: scale(0.95);
+}
+
+.search-bar img {
+    width: 20px;
+    height: 20px;
+}
 
 
 
